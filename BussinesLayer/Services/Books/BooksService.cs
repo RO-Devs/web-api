@@ -5,7 +5,7 @@ using DataLayer.Contexts;
 using DataLayer.Models.Books;
 using DataLayer.ViewModels.Books;
 
-namespace BussinesLayer.Repositories.Books
+namespace BussinesLayer.Services.Books
 {
     public class BooksService : Repository<Book, BookViewModel, BooksDbContext>, IBooksService
     {

@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
 
-namespace BussinesLayer.Interfaces.Core
+namespace BussinesLayer.Repositories.Core
 {
     public interface IRepository<TModel, TViewModel> where TModel : class where TViewModel : class 
     {
@@ -23,8 +22,6 @@ namespace BussinesLayer.Interfaces.Core
 
         IQueryable<TModel> GetQueryable(Expression<Func<TModel, bool>> predicate);
         IQueryable<TModel> GetQueryable();
-
-
 
         Task<bool> AnyAsync(Expression<Func<TModel, bool>> predicate);
         bool Any(Expression<Func<TModel, bool>> predicate);

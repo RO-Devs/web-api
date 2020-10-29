@@ -1,4 +1,4 @@
-﻿using BussinesLayer.Interfaces.Core;
+﻿using BussinesLayer.Repositories.Core;
 using DataLayer.Models.Authors;
 using DataLayer.ViewModels.Authors;
 
