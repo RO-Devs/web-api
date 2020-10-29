@@ -5,7 +5,7 @@ using DataLayer.Contexts;
 using DataLayer.Models.Genres;
 using DataLayer.ViewModels.Genres;
 
-namespace BussinesLayer.Repositories.Genres
+namespace BussinesLayer.Services.Genres
 {
     public class GenresService : Repository<Genre, GenreViewModel, BooksDbContext>, IGenresService
     {

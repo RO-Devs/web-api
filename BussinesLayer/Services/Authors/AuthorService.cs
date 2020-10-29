@@ -5,7 +5,7 @@ using DataLayer.Contexts;
 using DataLayer.Models.Authors;
 using DataLayer.ViewModels.Authors;
 
-namespace BussinesLayer.Repositories.Authors
+namespace BussinesLayer.Services.Authors
 {
     public class AuthorService : Repository<Author, AuthorViewModel, BooksDbContext>, IAuthorService
     {

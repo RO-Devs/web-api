@@ -1,4 +1,4 @@
-﻿using BussinesLayer.Interfaces.Core;
+﻿using BussinesLayer.Repositories.Core;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 

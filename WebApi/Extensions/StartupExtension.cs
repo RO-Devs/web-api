@@ -1,18 +1,18 @@
-﻿using System;
-using System.Linq;
-using AutoMapper;
+﻿using AutoMapper;
 using BussinesLayer.Interfaces.Authors;
 using BussinesLayer.Interfaces.Books;
 using BussinesLayer.Interfaces.Genres;
-using BussinesLayer.Repositories.Authors;
-using BussinesLayer.Repositories.Books;
-using BussinesLayer.Repositories.Genres;
 using DataLayer.Contexts;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
+using System;
+using System.Linq;
+using BussinesLayer.Services.Authors;
+using BussinesLayer.Services.Books;
+using BussinesLayer.Services.Genres;
 
 namespace WebApi.Extensions
 {
