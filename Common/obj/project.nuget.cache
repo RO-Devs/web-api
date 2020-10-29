@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xobKHgmZ9l5LNPy7r15KP/l97c9qhvnzgpk8dll7RvEz3DxDdBAjZLh1HT7ENtGVTdsdXmFu3poPw7W4NszUgg==",
+  "dgSpecHash": "W+i5XqTj8WKiUBjDpowscCd2hfA54w4QeBP1uSkuJ68BzZRV339y4xHR48O3wOwcTgxWhb/PvjxDDILtjnT/oQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Orbis\\source\\repos\\WebApi\\Common\\Common.csproj",
+  "projectFilePath": "C:\\Users\\ronie\\Documents\\Proy\\web-api\\Common\\Common.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

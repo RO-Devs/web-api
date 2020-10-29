@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\Orbis\\.nuget\\packages\\": {}
+    "C:\\Users\\ronie\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Orbis\\source\\repos\\WebApi\\Common\\Common.csproj",
+      "projectUniqueName": "C:\\Users\\ronie\\Documents\\Proy\\web-api\\Common\\Common.csproj",
       "projectName": "Common",
-      "projectPath": "C:\\Users\\Orbis\\source\\repos\\WebApi\\Common\\Common.csproj",
-      "packagesPath": "C:\\Users\\Orbis\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Orbis\\source\\repos\\WebApi\\Common\\obj\\",
+      "projectPath": "C:\\Users\\ronie\\Documents\\Proy\\web-api\\Common\\Common.csproj",
+      "packagesPath": "C:\\Users\\ronie\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ronie\\Documents\\Proy\\web-api\\Common\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Orbis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ronie\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -58,7 +58,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

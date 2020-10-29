@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Orbis\\source\\repos\\WebApi\\DataLayer\\DataLayer.csproj": {}
+    "C:\\Users\\ronie\\Documents\\Proy\\web-api\\DataLayer\\DataLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Orbis\\source\\repos\\WebApi\\DataLayer\\DataLayer.csproj": {
+    "C:\\Users\\ronie\\Documents\\Proy\\web-api\\DataLayer\\DataLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Orbis\\source\\repos\\WebApi\\DataLayer\\DataLayer.csproj",
+        "projectUniqueName": "C:\\Users\\ronie\\Documents\\Proy\\web-api\\DataLayer\\DataLayer.csproj",
         "projectName": "DataLayer",
-        "projectPath": "C:\\Users\\Orbis\\source\\repos\\WebApi\\DataLayer\\DataLayer.csproj",
-        "packagesPath": "C:\\Users\\Orbis\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Orbis\\source\\repos\\WebApi\\DataLayer\\obj\\",
+        "projectPath": "C:\\Users\\ronie\\Documents\\Proy\\web-api\\DataLayer\\DataLayer.csproj",
+        "packagesPath": "C:\\Users\\ronie\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ronie\\Documents\\Proy\\web-api\\DataLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Orbis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ronie\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -37,6 +37,30 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.9, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -52,7 +76,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
