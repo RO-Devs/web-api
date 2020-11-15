@@ -19,11 +19,13 @@ namespace WebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
+            services.ConfigureCors();
+            services.ConfigureJwt(Configuration);
             services.ConfigureDbContext(Configuration);
             services.ServicesImplementations();
             services.ConfigureAutomapper();
             services.ConfigureSwagger();
+            services.AddControllers();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -39,6 +41,9 @@ namespace WebApi
             app.UseRouting();
 
             app.UseAuthorization();
+            app.UseAuthentication();
+
+            app.UseCors(nameof(Startup));
 
             app.UseEndpoints(endpoints =>
             {
