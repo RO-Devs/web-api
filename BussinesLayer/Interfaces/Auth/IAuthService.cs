@@ -7,6 +7,6 @@ namespace BussinesLayer.Interfaces.Auth
 {
     public interface IAuthService
     {
-        Task<string> Login();
+       string BuildToken(string userName);
     }
 }

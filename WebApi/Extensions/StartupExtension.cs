@@ -1,24 +1,26 @@
 ﻿using AutoMapper;
+using BussinesLayer.Interfaces.Auth;
 using BussinesLayer.Interfaces.Authors;
 using BussinesLayer.Interfaces.Books;
 using BussinesLayer.Interfaces.Genres;
-using DataLayer.Contexts;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.OpenApi.Models;
-using System;
-using System.Linq;
+using BussinesLayer.Services.Auth;
 using BussinesLayer.Services.Authors;
 using BussinesLayer.Services.Books;
 using BussinesLayer.Services.Genres;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.IdentityModel.Tokens;
+using DataLayer.Contexts;
+using DataLayer.Models.Auth;
 using DataLayer.Settings;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
+using System;
+using System.Linq;
 using System.Text;
-using BussinesLayer.Services.Auth;
-using BussinesLayer.Interfaces.Auth;
 
 namespace WebApi.Extensions
 {
@@ -97,6 +99,24 @@ namespace WebApi.Extensions
              {
                  build.AddPolicy(nameof(Startup), _ => _.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
              });
+        }
+    
+        public static void IdentityConfiguration(this IServiceCollection services)
+        {
+            services.AddIdentity<ApplicationUser, IdentityRole>()
+                .AddEntityFrameworkStores<BooksDbContext>()
+                .AddDefaultTokenProviders();
+            //mode free
+            services.Configure<IdentityOptions>(options =>
+            {
+                options.Password.RequireDigit = false;
+                options.Password.RequireLowercase = false;
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequireUppercase = false;
+                options.Password.RequiredLength = 6;
+                options.Password.RequiredUniqueChars = 1;
+                options.User.RequireUniqueEmail = true;
+            });
         }
     }
 }

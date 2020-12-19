@@ -1,14 +1,16 @@
 ﻿using DataLayer.ContextExtension.Authors;
 using DataLayer.ContextExtension.Books;
 using DataLayer.ContextExtension.Genres;
+using DataLayer.Models.Auth;
 using DataLayer.Models.Authors;
 using DataLayer.Models.Books;
 using DataLayer.Models.Genres;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace DataLayer.Contexts
 {
-    public class BooksDbContext : DbContext
+    public class BooksDbContext : IdentityDbContext<ApplicationUser>
     {
         public BooksDbContext(DbContextOptions<BooksDbContext> options) : base(options)
         {

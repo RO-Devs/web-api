@@ -19,23 +19,11 @@ namespace BussinesLayer.Services.Auth
             _options = options.Value;
         }
 
-        /// <summary>
-        /// this warning is fixed with async operation
-        /// </summary>
-        /// <returns></returns>
-        public async Task<string> Login()
-        {
-            //validate user with EFCore
-            //----
-            //build a token
-            return BuildToken();
-        }
-
-        private string BuildToken()
+        public string BuildToken(string userName)
         {
             var claims = new[]
             {
-                new Claim(JwtRegisteredClaimNames.UniqueName, "Orbis"),
+                new Claim(JwtRegisteredClaimNames.UniqueName, userName),
                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
              };
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_options.SecretKey));
